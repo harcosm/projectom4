@@ -8,13 +8,38 @@
 </head>
 <body>
     <h1>La Vanguardia - <small>{{rss.feed.title}}</small></h1>
-    {% for item in rss.entries %}
+    <p>
+        <a href="{{rss.feed.link}}">Visita el canal</a>
+    </p>
+    {% if rss.feed.image %}
         <p>
-            <a href="{{item.link}}">{{item.title}}</a>
-            {% for media in item.media_content %}
-                <p><img src="{{media.url}}" alt="{{item.title}}" /></p>
-            {% endfor %}
+            <img src="{{rss.feed.image.href}}" alt="{{rss.feed.title}} Logo" />
         </p>
+    {% endif %}
+    {% for item in rss.entries %}
+        <div class="item">
+            <h2><a href="{{item.link}}">{{item.title}}</a></h2>
+            {% if item.media_content %}
+                {% for media in item.media_content %}
+                    <p><img src="{{media.url}}" alt="{{item.title}}" /></p>
+                {% endfor %}
+            {% endif %}
+            {% if item.description %}
+                <p>{{item.description}}</p>
+            {% endif %}
+            {% if item.author %}
+                <p><strong>Autor:</strong> {{item.author}}</p>
+            {% endif %}
+            {% if item.published %}
+                <p><strong>Data de publicació:</strong> {{item.published}}</p>
+            {% endif %}
+            {% if item.updated %}
+                <p><strong>Última modificació:</strong> {{item.updated}}</p>
+            {% endif %}
+            {% if item.category %}
+                <p><strong>Categoria:</strong> {{item.category}}</p>
+            {% endif %}
+        </div>
     {% endfor %}
 </body>
 </html>
