@@ -264,6 +264,64 @@ entries[i].expired s'analitza en entries[i].expired_parsed .
 
 ![image](https://github.com/harcosm/projectom4/assets/130600270/04a07610-8dd8-49b9-b286-30dd13558253)
 
+Per qualsevol dubte pots buscar en el seguent link:
+
+https://feedparser.readthedocs.io/en/latest/date-parsing.html
+
+## Bootstrap:
+
+Bootstrap és un popular marc de treball (framework) front-end de codi obert, desenvolupat per Twitter, que facilita el disseny i desenvolupament de llocs web i aplicacions web. Aquí tens una descripció de Bootstrap i alguns dels seus conceptes principals:
+
+Conceptes Bàsics de Bootstrap:
+Sistema de Reixa (Grid System):
+
+Bootstrap utilitza un sistema de reixa de 12 columnes per organitzar i distribuir el contingut a la pàgina.
+Permet crear dissenys responsius que s'adapten automàticament a diferents mides de pantalla, des de dispositius mòbils fins a pantalles d'escriptori.
+Components Reutilitzables:
+
+Bootstrap proporciona una àmplia gamma de components predefinits, com botons, barres de navegació, formularis, targetes, modals, etc.
+Aquests components estan dissenyats amb un estil coherent i poden ser fàcilment personalitzats i reutilitzats en diferents parts del lloc web o aplicació.
+Estils i Temes Predissenyats:
+
+Bootstrap inclou un conjunt complet d'estils predissenyats per tipografies, colors, espaiat, etc.
+També ofereix la possibilitat de crear i aplicar temes personalitzats per adaptar-se a l'estètica i marca d'un projecte específic.
+JavaScript Integrat:
+
+Bootstrap inclou una sèrie de plugins i components JavaScript, com carrossels, acordions, pestanyes, desplegables, etc.
+Aquests components afegixen funcionalitats interactives i dinàmiques a la interfície d'usuari, millorant l'experiència de l'usuari.
+Responsivitat i Adaptabilitat:
+
+Bootstrap està dissenyat pensant en la resposta i l'adaptabilitat, el que significa que els llocs web i aplicacions desenvolupats amb Bootstrap s'ajusten automàticament a diferents dispositius i mides de pantalla.
+Documentació Detallada:
+
+Bootstrap proporciona una documentació completa i detallada que inclou exemples de codi, guies d'inici ràpid, i referències de components i estils.
+La documentació facilita l'aprenentatge i la utilització efectiva de Bootstrap per desenvolupar projectes web.
+Funcionament Bàsic de Bootstrap:
+Integració:
+
+Es integra fàcilment en projectes web utilitzant els fitxers CSS i JavaScript de Bootstrap, que es poden descarregar i incloure en el codi del projecte.
+També es pot utilitzar a través de gestors de paquets com npm o mitjançant CDN (Content Delivery Network).
+Ús de Components:
+
+Els components de Bootstrap s'utilitzen afegint classes CSS predefinides als elements HTML.
+Per exemple, per crear un botó, es poden afegir les classes btn i btn-primary a un element <button>.
+Personalització:
+
+Bootstrap és altament personalitzable i permet modificar fàcilment estils, colors, mides, etc., mitjançant la sobreescriptura de classes CSS o la creació de temes personalitzats.
+Desenvolupament Responsiu:
+
+En utilitzar el sistema de reixa i classes d'utilitat de Bootstrap, es poden crear dissenys responsius que s'adaptin a diferents dispositius i mides de pantalla.
+En resum, Bootstrap és un marc de treball front-end àmpliament utilitzat que ofereix una àmplia gamma d'eines i components per facilitar el desenvolupament web, des de la creació de dissenys responsius fins a la implementació d'elements interactius i dinàmics. La seva facilitat d'ús, documentació detallada i flexibilitat el converteixen en una opció popular entre els desenvolupadors web.
+
+Qualsevol tipus de informació la podeu trobar als seguents links:
+
+
+https://www.w3schools.com/bootstrap5/
+https://getbootstrap.com/docs/5.3
+https://getbootstrap.esdocu.com/docs/5.3 (en castellà)
+
+
+
 
 
 
