@@ -1,24 +1,17 @@
-# Exemple de README
+# Projecte UF3 de M04
 
-Això és un [enllaç](https://google.com) i això són **negretes** i *cursiva* i ara ve una llista:
+*Objectiu del projecte: Desenvolupar una aplicació amb python + flask que mostra el contingut de XMLs en format feed/rss maquetat amb bootstrap.
 
-* hola
-* que
-* tal
+Contingut per explicar:
+1. Entorns virtuals a python (.venv).
+2. Flask, conceptes bàsics. No farem formularis ni res complex, tan sols peticions get.
+3. Jinja, el sistema de plantilles de flask. Com mostrar variables, if & for. No cal res més.
+4. Com recuperar les dades d'un fitxer RSS fent servir la llibreria feedparser.
+5. Bootstrap 5.
+6. Conceptes bàsics de javascript.
 
-Potser vols una llista numerada:
+## Entorns Virtuals
 
-1. tot
-2. bé
-3. gràcies
-
-## Un títol de nivell 2
-
-I un troç de codi
-
-    apt-get install virus
-
-O aixó també és un troç de codi:
 
 ```python
 a = 2 + 3
