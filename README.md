@@ -11,6 +11,11 @@ Contingut per explicar:
 6. Conceptes bàsics de javascript.
 
 ## Entorns Virtuals
+
+* Que son?
+
+Un entorn virtual és un mecanisme que permet crear un espai aïllat per a la instal·lació de paquets i dependències d'un projecte específic en Python. Això és especialment útil per gestionar diferents versions de llibreries i evitar conflictes entre projectes que poden tenir diferents requisits.
+
 * Per començar a treballar amb un entorn virtual, el primer pas és crear-lo. Per això, obre un terminal integrat des del Visual Code i executa:
 
 ```
@@ -45,6 +50,29 @@ Amb Windows: .venv\Scripts\activate
   Aqui os deixo el seguent Link per poder baixarse l'extensió: https://marketplace.visualstudio.com/items?itemName=donjayamanne.python-environment-manager
   
 Per qualsevol dubte amb Entorns Virtuals podeu consultar al seguent link: https://docs.python.org/es/3/library/venv.html  
+
+
+
+
+## Flask 
+* Que es Flask?
+
+Flask és un microframework per a Python que permet desenvolupar aplicacions web de manera senzilla i flexible. Va ser creat per Armin Ronacher com a part del projecte Pocoo i és conegut per la seva simplicitat i extensibilitat.
+
+* Per inicial l'aplicació cal executar des del terminal integrat del Visual Code:
+```
+flask run --debug
+```
+Aqui us deixo un petit exemple per inicialitzar Flask:
+
+![image](https://github.com/harcosm/projectom4/assets/130600270/f947087b-dacc-4b34-af3a-95968a068aab)
+
+
+
+
+
+
+  
   
 
 
