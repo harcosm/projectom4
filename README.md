@@ -67,6 +67,144 @@ Aqui us deixo un petit exemple per inicialitzar Flask:
 
 ![image](https://github.com/harcosm/projectom4/assets/130600270/f947087b-dacc-4b34-af3a-95968a068aab)
 
+## Jinja
+
+* Que es Jinja?
+
+Jinja és un motor de plantilles per a Python, dissenyat per a generar dinàmicament HTML, XML, o altres formats de sortida en aplicacions web. Jinja és molt utilitzat juntament amb frameworks web com Flask i Django, tot i que també pot ser utilitzat de manera independent. Va ser creat per Armin Ronacher, el mateix creador de Flask.
+
+* Conceptes bàsics:
+
+
+1. Variables.
+
+   Pots inserir variables a les plantilles utilitzant les doble claus ({{ }}):
+
+   ```
+   <p>Hola, {{ nom }}!</p>
+   ```
+
+2. Control de flux.
+
+   Jinja permet utilitzar estructures de control com bucles i condicions dins de les 	 
+   plantilles.
+
+* Bucles:
+  
+```
+<ul>
+  {% for article in articles %}
+    <li>{{ article.titol }}</li>
+  {% endfor %}
+</ul>
+```
+
+* Condicions:
+```
+{% if user %}
+  <p>Hola, {{ user.nom }}!</p>
+{% else %}
+  <p>Hola, convidat!</p>
+{% endif %}
+ ```
+
+3. Filtres.
+
+Els filtres permeten modificar la sortida de les variables. Per exemple, per convertir un text a majúscules:
+
+```
+<p>{{ nom | upper }}</p>
+```
+4. Macros.
+Les macros són com funcions dins de les plantilles, que permeten reutilitzar codi.
+```
+{% macro saludo(nom) %}
+  <p>Hola, {{ nom }}!</p>
+{% endmacro %}
+
+{{ saludo('Anna') }}
+```
+
+* Exemple complet
+A continuació es mostra un exemple complet d'una aplicació Flask que utilitza Jinja per renderitzar plantilles HTML:
+
+
+app.py:
+```
+from flask import Flask, render_template
+
+app = Flask(__name__)
+
+@app.route('/')
+def home():
+    user = {'nom': 'Anna'}
+    articles = [
+        {'titol': 'Article 1'},
+        {'titol': 'Article 2'},
+        {'titol': 'Article 3'}
+    ]
+    return render_template('index.html', user=user, articles=articles)
+
+if __name__ == '__main__':
+    app.run(debug=True)
+```
+
+
+templates/index.html:
+```
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Benvingut</title>
+</head>
+<body>
+    {% if user %}
+        <h1>Hola, {{ user.nom }}!</h1>
+    {% else %}
+        <h1>Hola, convidat!</h1>
+    {% endif %}
+
+    <h2>Articles</h2>
+    <ul>
+        {% for article in articles %}
+            <li>{{ article.titol }}</li>
+        {% endfor %}
+    </ul>
+</body>
+</html>
+```
+
+## RSS
+
+* Que es?
+
+L'estàndard RSS és un format XML mitjançant el qual portals com diaris, blogs o podcasts comparteixen el seu contingut per a que es faci servir en altres llocs webs o programes.
+
+
+
+
+
+
+
+
+
+
+
+
+  
+   
+   
+
+   
+   
+
+
+
+
+
+
+
+
 
 
 
