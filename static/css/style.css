@@ -1,8 +1,23 @@
-body {
-    background-color: beige;
+.fondobody {
+    background-color: rgb(239, 191, 191);
+    
+}
+.container-fluid  {
+    background-color: rgb(220, 33, 12); 
+}
+.bg-color{
+    background-color: rgb(220, 33, 12);
 }
 
-img {
-    width: 400px;
-    height: auto;
+.container_imagen {
+    display:flex;
+    text-align: center;
+    justify-content: center;
+    padding-top: 100px;
+    margin-bottom: 50px;
+}
+
+
+.container_principal{
+  background-color: rgb(194, 78, 24);
 }
